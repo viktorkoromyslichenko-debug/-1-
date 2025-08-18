@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Шаурма №1 — Ламаджо Гриль</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    /* Шапка */
+    header {
+      background: linear-gradient(135deg, #d32f2f, #b71c1c);
+      color: white;
+      text-align: center;
+      padding: 3.5rem 1rem;
+      border-bottom: 8px solid #ff8a65;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.6rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    }
+
+    header p {
+      font-size: 1.7rem;
+      opacity: 0.9;
+    }
+
+    /* Навигация */
+    nav {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 1.3rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1.2rem;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.15rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffb300;
+    }
+
+    /* Основной контент */
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 3.5rem;
+      background: white;
+      padding: 2.2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #d32f2f;
+      font-size: 2.4rem;
+      margin-bottom: 1.8rem;
+      border-bottom: 2px solid #ffebee;
+      padding-bottom: 0.7rem;
+    }
+
+    /* Список меню */
+    .menu-list {
+      list-style: none;
+    }
+
+    .menu-item {
+      margin-bottom: 1.8rem;
+      padding-bottom: 1.1rem;
+      border-bottom: 1px dashed #f1f1f1;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    .menu-item h3 {
+      font-size: 1.5rem;
+      color: #1a1a1a;
+    }
+
+    .menu-item p {
+      color: #666;
+      margin-top: 0.4rem;
+      font-style: italic;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #d32f2f;
+      font-size: 1.3rem;
+    }
+
+    /* Подпункты (размеры, варианты) */
+    .sub-items {
+      margin-left: 1.6rem;
+      margin-top: 0.6rem;
+    }
+
+    .sub-items li {
+      margin: 0.5rem 0;
+      list-style: none;
+    }
+
+    /* Карта */
+    .map {
+      height: 400px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Подвал */
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      background-color: #1a1a1a;
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    footer p {
+      margin: 0.6rem 0;
+    }
+
+    footer a {
+      color: #ffb300;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header>
+    <h1>Шаурма №1</h1>
+    <p>Ламаджо Гриль</p>
+  </header>
+
+  <!-- Меню навигации -->
+  <nav>
+    <a href="#shaurma">Шаурма</a>
+    <a href="#sides">Фри и Нагетсы</a>
+    <a href="#lamaj">Ламаджо</a>
+    <a href="#pancakes">Панкейки</a>
+    <a href="#extras">Добавки</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <!-- Основной контент -->
+  <div class="container">
+
+    <!-- 1. Шаурма -->
+    <section id="shaurma">
+      <h2>🌯 Шаурма</h2>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <h3>Шаурма классическая (маленькая)</h3>
+          <p>Курица, овощи, соус, лаваш</p>
+          <div class="price">249 ₽</div>
+        </li>
+        <li class="menu-item">
+          <h3>Шаурма классическая (большая)</h3>
+          <p>Увеличенная порция курицы, двойной лаваш</p>
+          <div class="price">299 ₽</div>
+        </li>
+        <li class="menu-item">
+          <h3>Шаурма Мега</h3>
+          <p>Говядина, курица, сыр, овощи, соус барбекю</p>
+          <div class="price">399 ₽</div>
+        </li>
+        <li class="menu-item">
+          <h3>Шаурма Барбекю (маленькая)</h3>
+          <p>Маринованная курица, лук, перец, соус барбекю</p>
+          <div class="price">259 ₽</div>
+        </li>
+        <li class="menu-item">
+          <h3>Шаурма Барбекю (большая)</h3>
+          <p>Большая порция, сыр, двойной соус</p>
+          <div class="price">319 ₽</div>
+        </li>
+        <li class="menu-item">
+          <h3>Шаурма с креветкой</h3>
+          <p>Свежие креветки, овощи, соус тар-тар, лаваш</p>
+          <div class="price">359 ₽</div>
+        </li>
+        <li class="menu-item">
+          <h3>Гиро</h3>
+          <p>Свинина, лук, огурцы, соус цацики, пита</p>
+          <div class="price">299 ₽</div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 2. Фри и Нагетсы -->
+    <section id="sides">
+      <h2>🍟 Фри и Нагетсы</h2>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <h3>Картошка фри</h3>
+          <div class="price">149 ₽</div>
+        </li>
+        <li class="menu-item">
+          <h3>Картошка по-деревенски</h3>
+          <p>С перцем, луком и специями</p>
+          <div class="price">165 ₽</div>
+        </li>
+        <li class="menu-item">
+          <h3>Наггетсы</h3>
+          <ul class="sub-items">
+            <li>4 шт — <span class="price">79 ₽</span></li>
+            <li>6 шт — <span class="price">119 ₽</span></li>
+            <li>9 шт — <span class="price">149 ₽</span></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <h3>Сырные палочки (5 шт)</h3>
+          <p>Хрустящие, с расплавленным сыром</p>
+          <div class="price">149 ₽</div>
+        </li>
+        <li class="menu-item">
+          <h3>Крылышки</h3>
+          <ul class="sub-items">
+            <li>3 шт — <span class="price">180 ₽</span></li>
+            <li>5 шт — <span class="price">280 ₽</span></li>
+            <li>9 шт — <span class="price">379 ₽</span></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 3. Ламаджо -->
+    <section id="lamaj">
+      <h2>🔥 Ламаджо</h2>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <h3>Ламаджо с мясом</h3>
+          <p>Тонкое тесто, говяжий фарш, лук, петрушка, перец, лимон</p>
+          <div class="price">260 ₽</div>
+        </li>
+        <li class="menu-item">
+          <h3>Ламаджо с сыром</h3>
+          <p>Моцарелла, фета, зелень, помидоры, оливковое масло</p>
+          <div class="price">240 ₽</div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 4. Панкейки -->
+    <section id="pancakes">
+      <h2>🥞 Панкейки с топпингом</h2>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <h3>Шоколад</h3>
+          <ul class="sub-items">
+            <li>3 шт — <span class="price">170 ₽</span></li>
+            <li>5 шт — <span class="price">229 ₽</span></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <h3>Клубника</h3>
+          <ul class="sub-items">
+            <li>3 шт — <span class="price">170 ₽</span></li>
+            <li>5 шт — <span class="price">229 ₽</span></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <h3>Банан</h3>
+          <ul class="sub-items">
+            <li>3 шт — <span class="price">170 ₽</span></li>
+            <li>5 шт — <span class="price">229 ₽</span></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <h3>Карамель</h3>
+          <ul class="sub-items">
+            <li>3 шт — <span class="price">170 ₽</span></li>
+            <li>5 шт — <span class="price">229 ₽</span></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 5. Добавки и соусы -->
+    <section id="extras">
+      <h2>➕ Добавки и Соусы</h2>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <h3>Дополнительные ингредиенты</h3>
+          <ul class="sub-items">
+            <li>Курица — <span class="price">80 ₽</span></li>
+            <li>Картошка — <span class="price">60 ₽</span></li>
+            <li>Сыр — <span class="price">40 ₽</span></li>
+            <li>Халапенью — <span class="price">30 ₽</span></li>
+            <li>Соус Шрирача — <span class="price">30 ₽</span></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <h3>Соусы в ассортименте</h3>
+          <p>Чесночный, барбекю, острый, йогуртовый, тар-тар и другие</p>
+          <div class="price">30 ₽ / шт</div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 6. Контакты и карта -->
+    <section id="contact">
+      <h2>📍 Где нас найти</h2>
+      <div style="text-align: center; margin-bottom: 1.8rem; font-size: 1.15rem; line-height: 1.9;">
+        <p><strong>📞 Телефон:</strong> <a href="tel:89012291001" style="color:#d32f2f;">8 (901) 229-10-01</a></p>
+        <p><strong>🏠 Адрес:</strong> г. Армавир, ул. Энгельса, 79</p>
+        <p><strong>⏰ Работаем:</strong> с 10:00 до 03:00 (ежедневно)</p>
+      </div>
+
+      <!-- Яндекс.Карта -->
+      <div class="map">
+        <iframe 
+          src="https:<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afad86628c333357d42e09f5982ac64de5cf798c61157264ab8cc10b8d8de6ef0&amp;source=constructor" width="449" height="335" frameborder="0"></iframe>"
+          frameborder="0" 
+          allowfullscreen="true">
+        </iframe>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Подвал -->
+  <footer>
+    <p>&copy; 2025 Шаурма №1 — Ламаджо Гриль. Все права защищены.</p>
+    <p>Сделано с любовью к вкусной еде и счастливым гостям.</p>
+  </footer>
+
+</body>
+</html>
